@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../TrabalhoKartodromo/css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro Kartodromo</h1>
+    <div id="form">
+
+
+        <form>
+
+            <h3>Insira seus dados:</h3>
+
+            <br>
+            <label for="nome"><strong>Nome:
+            </strong></label>
+            <br>
+            <input type="text" name="nome" 
+            size="20" maxlength="35"
+            required> <!--Input é criado para controles interativos-->
+            <br> <!--type é usado para representar um atributo-->
+
+            <label for="sobrenome"><strong>Sobrenome:</strong>
+            </label> <!--Label é uma legenda-->
+            <br>
+            <input type="text" name="sobrenome" size="20"
+            maxlength="35"> <!--maxlength é um máximo de caracteres aceitos para entrada-->
+            <br>
+            <label for="email"><strong>Email:</strong>
+            </label> <!--Label é uma legenda-->
+            <br>
+            <input type="text" name="email" size="20"
+            maxlength="35"> <!--maxlength é um máximo de caracteres aceitos para entrada-->
+            <br> <!--br é um pular linha-->
+            <label for="telefone"><strong>Telefone:</strong>
+            </label>
+            <br>
+            <input type="phone" name="telefone">
+            <br>
+            <label for="idade"><strong>Idade</strong></label>
+                <select name="idade">
+                    <option> </option>
+                    <option> 0 a 6 anos</option>
+                    <option> 7 a 12 anos</option>
+                    <option> 13 a 17 anos</option>
+                    <option> acima de 18 anos</option>
+                 </select>
+
+            <br>
+            <br>
+
+            <h3>Informe sua reserva:</h3>
+            <br>
+
+            <label for="data"><strong>Data e Hora</strong>
+            </label>
+            <br>
+            <input type="datetime-local" name="data">
+            <br>
+            <br>
+            <label for="escolhas"><strong>Informe a pista:</strong></label>
+            <br>
+            <br>
+            <input name="tipo" type="radio"><strong> Juvenil</strong>
+            <br>
+            <input type="radio" name="tipo" ><strong> Adulto</strong>
+            <br>
+            <input type="radio" name="tipo" ><strong> Corrida</strong>
+            <br>
+            <br>
+
+            <input id = bottom type="submit" value="Enviar">
+
+            <a href="index.html"><input id = bottom type="button"
+            value="Voltar"></a>
+            
+        </form>
+
+    </div>
+    <div id = informa>
+        <p id = text>
+            Oferecemos macacão, luvas e capacetes.
+
+        </p>
+        <br>
+        <p id = text>
+            Necessario estar de calça jeans e tenis.
+        </p>
+    </div>
+
+</body>
+</html>
